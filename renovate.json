@@ -4,7 +4,7 @@
       "customType": "regex",
       "description": "Regex manager to update the spring major version in `spring-boot-major`.",
       "fileMatch": [
-        "^/spring-boot-major$"
+        "spring-boot-major$"
       ],
       "matchStrings": [
         "^(?<currentValue>.*)$"
