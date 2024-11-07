@@ -7,7 +7,7 @@
         "spring-boot-major$"
       ],
       "matchStrings": [
-        "^(?<currentValue>.+)$"
+        "^(?<currentValue>\\d+)"
       ],
       "datasourceTemplate": "maven",
       "depNameTemplate": "org.springframework.boot:spring-boot",
