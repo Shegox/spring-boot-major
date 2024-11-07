@@ -10,14 +10,8 @@
         "^(?<currentValue>\\d+)"
       ],
       "datasourceTemplate": "maven",
-      "depNameTemplate": "org.springframework.boot:spring-boot"
-    }
-  ],
-  "packageRules": [
-    {
-      "matchPackageNames": ["org.springframework.boot:spring-boot"],
-      "matchFileNames": ["spring-boot-major"],
-      "extractVersion": "^(?<version>\\d+)"
+      "depNameTemplate": "org.springframework.boot:spring-boot",
+      "extractVersionTemplate": "^(?<version>\\d+)"
     }
   ]
 }
