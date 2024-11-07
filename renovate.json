@@ -1,0 +1,17 @@
+{
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Regex manager to update the spring major version in `spring-boot-major`.",
+      "fileMatch": [
+        "^spring-boot-major$"
+      ],
+      "matchStrings": [
+        "^(?<currentValue>.*)$"
+      ],
+      "datasourceTemplate": "maven",
+      "depNameTemplate": "org.springframework.boot:spring-boot",
+      "extractVersionTemplate": "^(?<version>\\d+\\)$"
+    }
+  ]
+}
