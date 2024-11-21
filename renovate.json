@@ -12,6 +12,18 @@
       "datasourceTemplate": "maven",
       "depNameTemplate": "org.springframework.boot:spring-boot",
       "extractVersionTemplate": "^(?<version>\\d+)"
+    },
+    {
+      "customType": "regex",
+      "description": "Regex manager to update the spring full version in `spring-boot-full`.",
+      "fileMatch": [
+        "spring-boot-full$"
+      ],
+      "matchStrings": [
+        "^(?<currentValue>\\d+)"
+      ],
+      "datasourceTemplate": "maven",
+      "depNameTemplate": "org.springframework.boot:spring-boot"
     }
   ]
 }
